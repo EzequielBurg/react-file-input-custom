@@ -33,9 +33,9 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "react-input-file",
+  "name": "react-file-input-custom",
   "author": "EzequielBurg",
-  "description": "React Input File is a custom input file for react web pages",
+  "description": "A custom file input for react web pages",
   "module": "dist/react-input-file.esm.js",
   "size-limit": [
     {
