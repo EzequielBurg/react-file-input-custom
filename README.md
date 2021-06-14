@@ -1,6 +1,6 @@
 # React File Input Custom
 
-A simple and humble react component for input file in web apps.
+A simple and humble react component for file input in web apps.
 
 > Feel free for contribute with this package. It's for my necessity, but I want to help more devs that needs a different file input.
 
