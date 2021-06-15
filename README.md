@@ -19,20 +19,27 @@ or
 yarn add react-file-input-custom
 ```
 
+## Example
+
+```javascript
+import { ReactFileInputCustom } from 'react-file-input-custom';
+
+const App = () => <ReactFileInputCustom />;
+```
+
 ## Props Reference
 
 *Nothing is required.*
 
 | Property | Type     | Default     | Description                |
 | :-------- | :------- | :------- | :------------------------- |
-| `handleChange` | `function` | - | Receives the event from input |
-| `acceptedExtensions` | `string` | - | Accepted files extensions |
-| `backgroundColor` | `string` | #3699ff | Background color of input |
-| `textColor` | `string` | #fff | Color of icon & text |
-| `text` | `string` | Selecione um arquivo | Text of input |
-| `width` | `string` | 250px | Width of input |
-| `classes` | `string` | - | Additional CSS classes for input |
-| `...props` | `{ ...props }` | - | Any props for input |
-
+| **handleChange** | `function` | - | Receives the event from input |
+| **acceptedExtensions** | `string` | - | Accepted files extensions |
+| **backgroundColor** | `string` | #3699ff | Background color of input |
+| **textColor** | `string` | #fff | Color of icon & text |
+| **text** | `string` | Selecione um arquivo | Text of input |
+| **width** | `string` | 250px | Width of input |
+| **classes** | `string` | - | Additional CSS classes for input |
+| **...props** | `{ ...props }` | - | Any props for input |
 
 #### This package was developed in TSDX ➡ https://tsdx.io/ .

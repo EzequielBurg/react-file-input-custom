@@ -1,1 +1,1 @@
-export * from './ReactInputFile';
+export * from './ReactFileInputCustom';

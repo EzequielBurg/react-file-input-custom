@@ -2,7 +2,7 @@ import React, { useCallback, useRef, useState } from 'react';
 import { ImUpload2 } from 'react-icons/im';
 require('./styles.css');
 
-export type ReactInputFileTypes = {
+export type ReactFileInputTypes = {
   handleChange?: (event: InputEvent) => void;
   acceptedExtensions?: string;
   backgroundColor?: string;
@@ -12,7 +12,7 @@ export type ReactInputFileTypes = {
   classes?: string;
 }
 
-export const ReactInputFile: React.FC<ReactInputFileTypes> = ({
+export const ReactFileInputCustom: React.FC<ReactFileInputTypes> = ({
   handleChange,
   acceptedExtensions,
   backgroundColor='#3699ff',
