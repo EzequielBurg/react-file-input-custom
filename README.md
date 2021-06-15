@@ -1,6 +1,6 @@
 # React File Input Custom 📲
 
-![App Screenshot](src/assets/screenshot.png)
+![App Screenshot](src/assets/input-screenshot.png)
 
 A simple and humble react component for file input in web apps.
 
