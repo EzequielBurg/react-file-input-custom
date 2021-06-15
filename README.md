@@ -1,4 +1,6 @@
-# React File Input Custom
+# React File Input Custom 📲
+
+![App Screenshot](src/assets/screenshot.png)
 
 A simple and humble react component for file input in web apps.
 
@@ -16,5 +18,21 @@ or
 ```bash
 yarn add react-file-input-custom
 ```
-> This package was developed in TSDX => https://tsdx.io/ .
 
+## Props Reference
+
+*Nothing is required.*
+
+| Property | Type     | Default     | Description                |
+| :-------- | :------- | :------- | :------------------------- |
+| `handleChange` | `function` | - | Receives the event from input |
+| `acceptedExtensions` | `string` | - | Accepted files extensions |
+| `backgroundColor` | `string` | #3699ff | Background color of input |
+| `textColor` | `string` | #fff | Color of icon & text |
+| `text` | `string` | Selecione um arquivo | Text of input |
+| `width` | `string` | 250px | Width of input |
+| `classes` | `string` | - | Additional CSS classes for input |
+| `...props` | `{ ...props }` | - | Any props for input |
+
+
+#### This package was developed in TSDX ➡ https://tsdx.io/ .

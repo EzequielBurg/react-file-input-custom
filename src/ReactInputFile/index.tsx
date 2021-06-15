@@ -7,7 +7,9 @@ export type ReactInputFileTypes = {
   acceptedExtensions?: string;
   backgroundColor?: string;
   textColor?: string;
+  text?: string;
   width?: string;
+  classes?: string;
 }
 
 export const ReactInputFile: React.FC<ReactInputFileTypes> = ({
@@ -15,7 +17,9 @@ export const ReactInputFile: React.FC<ReactInputFileTypes> = ({
   acceptedExtensions,
   backgroundColor='#3699ff',
   textColor='#fff',
-  width='220px',
+  text='Selecione um arquivo',
+  width='250px',
+  classes,
   ...props
 }) => {
   const [logo, setLogo] = useState<File>();
@@ -36,19 +40,16 @@ export const ReactInputFile: React.FC<ReactInputFileTypes> = ({
   }, [handleChange]);
 
   return (
-    <div className="container">
+    <>
       <button
         type="button"
         onClick={handleClick}
-        className="button-input-file"
+        className={`button-input-file ${classes}`}
         style={{ background: backgroundColor, color: textColor, width: width }}
       >
         <ImUpload2 size={18} color={textColor} />
         &nbsp;
-        {!logo
-          ? 'Selecione um arquivo'
-          : logo?.name
-        }
+        {!logo ? text : logo?.name}
       </button>
       <input
         type="file"
@@ -58,6 +59,6 @@ export const ReactInputFile: React.FC<ReactInputFileTypes> = ({
         onChange={handleChangeFile}
         {...props}
       />
-    </div>
+    </>
   );
 }
