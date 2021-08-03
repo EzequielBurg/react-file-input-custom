@@ -1,9 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+import styled from 'styled-components';
 
-.button-input-file {
+export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,9 +12,9 @@
   outline: 0;
   border-radius: 5px;
   transition: 0.3s;
-}
 
-.button-input-file:hover {
-  opacity: 0.8;
-  cursor: pointer;
-}
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+`;

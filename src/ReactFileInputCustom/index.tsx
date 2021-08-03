@@ -1,6 +1,6 @@
 import React, { useCallback, useRef, useState } from 'react';
 import { ImUpload2 } from 'react-icons/im';
-import './styles.css';
+import { Button } from './styles';
 
 export type ReactFileInputTypes = {
   handleChange?: (event: InputEvent) => void;
@@ -41,16 +41,16 @@ export const ReactFileInputCustom: React.FC<ReactFileInputTypes> = ({
 
   return (
     <>
-      <button
+      <Button
         type="button"
         onClick={handleClick}
-        className={`button-input-file ${classes}`}
+        className={classes}
         style={{ background: backgroundColor, color: textColor, width: width }}
       >
         <ImUpload2 size={18} color={textColor} />
         &nbsp;
         {!logo ? text : logo?.name}
-      </button>
+      </Button>
       <input
         type="file"
         accept={acceptedExtensions}
