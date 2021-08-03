@@ -1,6 +1,6 @@
 import React, { useCallback, useRef, useState } from 'react';
 import { ImUpload2 } from 'react-icons/im';
-require('./styles.css');
+import './styles.css';
 
 export type ReactFileInputTypes = {
   handleChange?: (event: InputEvent) => void;
