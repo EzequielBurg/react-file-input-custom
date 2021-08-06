@@ -42,4 +42,7 @@ const App = () => <ReactFileInputCustom />;
 | **classes** | `string` | - | Additional CSS classes for input |
 | **...props** | `{ ...props }` | - | Any props for input |
 
+#### Repository
+https://github.com/EzequielBurg/react-file-input-custom/tree/master
+
 #### This package was developed in TSDX ➡ https://tsdx.io/ .
