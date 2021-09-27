@@ -35,7 +35,7 @@ export const ReactFileInputCustom: React.FC<ReactFileInputTypes> = ({
     const fileUploaded = event.target.files[0];
     setLogo(fileUploaded);
     if (handleChange) {
-      handleChange(event);
+      handleChange(fileUploaded);
     }
   }, [handleChange]);
 
